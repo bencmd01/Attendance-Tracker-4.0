@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/popupborder"
+    android:padding="10dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/sendCodesBanner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Send QR codes to students?"
+        android:textColor="@color/Footprints"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/sendCodesCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="@color/Footprints"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/sendCodesBanner"
+        app:layout_constraintLeft_toLeftOf="@id/sendCodesBanner"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/sendCodesAcceptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:textColor="@color/Footprints"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/sendCodesBanner"
+        app:layout_constraintRight_toRightOf="@id/sendCodesBanner"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/sendCodesNoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textColor="@color/Footprints"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/sendCodesBanner"
+        app:layout_constraintRight_toLeftOf="@id/sendCodesAcceptButton"
+        app:layout_constraintLeft_toRightOf="@id/sendCodesCancelButton"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

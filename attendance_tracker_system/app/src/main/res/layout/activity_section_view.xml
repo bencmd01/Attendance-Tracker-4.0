@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SectionViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:text="Student List"
+                android:textColor="@color/Footprints"
+                android:paddingLeft="10dp"
+                />
+
+            <Button
+                android:id="@+id/sectionViewTimeEditButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:text="Add Times"
+                android:textColor="@color/Footprints"
+                android:tooltipText="Add/View Meeting Times"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="4">
+
+            <ImageButton
+                android:id="@+id/sectionAnalyticsButton"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:backgroundTint="@color/Golden"
+                android:src="@drawable/analytics"
+                android:tooltipText="Analytics Screen"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/sectionExportButton"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:backgroundTint="@color/Golden"
+                android:src="@drawable/exportfile"
+                android:tooltipText="Generate Report"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/sectionViewScanButton"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:backgroundTint="@color/Golden"
+                android:src="@drawable/qrcode"
+                android:tooltipText="Scan"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="4">
+
+            <ImageButton
+                android:id="@+id/addStudentButton"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:backgroundTint="@color/Golden"
+                android:src="@drawable/addstudent"
+                android:tooltipText="Add Student"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageButton
+
+                android:id="@+id/importlist"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:backgroundTint="@color/Golden"
+                android:src="@drawable/importlist"
+                android:tooltipText="Import Class List"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageButton
+                android:id="@+id/generateBatch"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:backgroundTint="@color/Golden"
+                android:src="@drawable/generateemails"
+                android:tooltipText="Send QR Codes"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nostudentDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No students to display"
+        android:visibility="visible" />
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/studentListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+
