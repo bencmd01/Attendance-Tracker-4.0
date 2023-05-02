@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/Rumble"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/loginLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/pfwlogo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp"
+            android:tooltipText="Go Mastadons!"/>
+
+        <EditText
+            android:id="@+id/loginUserEdit"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="30dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/Footprints"
+            app:layout_constraintTop_toBottomOf="@id/loginLogo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:id="@+id/loginPassEdit"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="30dp"
+            android:inputType="textPassword"
+            android:textColor="@color/Footprints"
+            app:layout_constraintTop_toBottomOf="@id/loginUserEdit"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/loginLoginBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/loginPassEdit"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="LOGIN"
+            android:textSize="50dp"
+
+            android:textColor="@color/Footprints"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/loginRegisterBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/loginLoginBtn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="5dp"
+            android:text="Register"
+            android:textSize="20dp"
+            android:textColor="@color/Footprints"
+            />
+
+        <Button
+            android:id="@+id/loginForgotPassBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/loginRegisterBtn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Forgot Password"
+            android:textSize="20dp"
+            android:textColor="@color/Footprints"
+            android:tooltipText="Sorry, I don't work yet. My existence depends on version 4"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

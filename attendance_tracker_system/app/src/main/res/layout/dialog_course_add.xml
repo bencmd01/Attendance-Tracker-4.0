@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/border"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/courseAddBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Course"
+        android:textSize="25dp"
+        android:textColor="@color/Footprints"/>
+
+    <EditText
+        android:id="@+id/courseAddName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+
+        <Button
+            android:id="@+id/courseAddAcceptBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Accept"
+            android:textColor="@color/Footprints"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/courseAddCancelBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Cancel"
+            android:textColor="@color/Footprints"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

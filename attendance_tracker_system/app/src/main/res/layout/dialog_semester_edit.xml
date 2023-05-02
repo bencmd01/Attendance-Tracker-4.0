@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    android:background="@drawable/border">
+
+    <TextView
+        android:id="@+id/semesterEditBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Footprints"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Edit Semester"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/semesterEditName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Change semester name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/semesterEditBanner"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/semesterEditButtonBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/semesterEditName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/semesterEditAcceptBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textColor="@color/Footprints"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/semesterEditDeleteBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="@color/Footprints"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/semesterEditCancelBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/Footprints"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

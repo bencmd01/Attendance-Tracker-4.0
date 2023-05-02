@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:background="@drawable/border">
+
+    <TextView
+        android:id="@+id/courseListName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/Footprints" />
+
+    <ImageButton
+        android:id="@+id/courseListBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/editicon"
+        android:background="@drawable/edit_image_button"
+        android:paddingStart="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginRight="5dp"
+        android:tooltipText="Change the name of this course or delete it."/>
+</LinearLayout>

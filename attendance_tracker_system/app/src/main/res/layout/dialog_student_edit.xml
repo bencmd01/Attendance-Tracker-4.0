@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    android:background="@drawable/border">
+
+    <TextView
+        android:id="@+id/studentEditBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Footprints"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Edit Student"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/studentEditNameEdit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Student Name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/studentEditBanner"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/studentEditEmailEdit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Student Email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/studentEditNameEdit"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/studentEditButtonBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/studentEditEmailEdit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/studentEditAcceptButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textColor="@color/Footprints"
+            android:textSize="15dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/studentEditDeleteButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="@color/Footprints"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/studentEditCancelButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/Footprints"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
